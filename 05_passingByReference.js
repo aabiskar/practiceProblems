@@ -8,5 +8,5 @@ y += 8; // shorthand for y = y + 8
 // what will the properties x, y, and z on obj1 and obj2 be equal to?
 var obj = { x: 7 };
 obj.y = 9;
-var obj2 = obj1;
+var obj2 = obj;
 obj2.z = 8;

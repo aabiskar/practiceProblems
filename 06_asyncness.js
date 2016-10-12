@@ -1,8 +1,7 @@
 // what will the below log out
-let j;
-
-for(let i = 0; i < 5; i++) {
+for(var i = 0; i < 5; i++) {
+  console.log('outside setTimeout', i);
   setTimeout(function() {
-    console.log(j);
+    console.log('inside setTimeout', i);
   }, 1000);
 }

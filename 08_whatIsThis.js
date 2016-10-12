@@ -1,4 +1,4 @@
-const obj = {
+const obj1 = {
   value: 5,
   increment: function(logVal) {
     console.log(logVal);
@@ -27,7 +27,7 @@ obj1.increment.call(obj2, 'log me!');
 obj2.decrement.apply(obj1, ['log me too!']);
 
 // bind, a function saved for later where 'this' is set and provided arguments as well
-const boundFunc = obj1.increment.bind(this, 'log me, I\'m bound!');
+const boundFunc = obj1.increment.bind(obj1, 'log me, I\'m bound!');
 boundFunc();
 
 // when you run "new" on a class what do you think the "this" is in the constructor?

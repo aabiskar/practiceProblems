@@ -1,6 +1,6 @@
 class Mammal {
   constructor(startingPosition) {
-    this.position;
+    this.position = startingPosition;
   }
 
   walk(move) { // shorthand for saying 'walk: function() {}', works on objects too
@@ -22,6 +22,8 @@ class Cheetah extends Mammal {
     this.position += this.age * time;
   }
 }
+
+const myMammal = new Mammal(3);
 
 const myPetCheetah = new Cheetah(0, 10);
 
